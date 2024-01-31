@@ -10,6 +10,7 @@ app.use(express.json());
 
 // users API Routes
 app.use('/api/users', require('./routes/usersRoutes'));
+app.use('/api/tours', require('./routes/toursRoutes'));
 
 const PORT = 5000;
 
