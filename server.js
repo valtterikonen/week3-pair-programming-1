@@ -13,6 +13,8 @@ app.use('/api/users', require('./routes/usersRoutes'));
 app.use('/api/tours', require('./routes/toursRoutes'));
 app.use('/api/services', require('./routes/servicesRoutes'));
 
+
+
 const PORT = 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

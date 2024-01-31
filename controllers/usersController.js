@@ -19,16 +19,16 @@ const getuserById = (req, res) => {
 
 // Create a New user
 const createuser = (req, res) => {
-  const newuser = {
+  const newUser = {
     id: uuid.v4(),
     ...req.body,
   };
 
-  if (!newuser.name || !newuser.email) {
+  if (!newUser.username || !newUser.email) {
     return res.status(400).json({ msg: 'Please include a name and email' });
   }
 
-  users.push(newuser);
+  users.push(newUser);
   res.json(users);
 };
 
